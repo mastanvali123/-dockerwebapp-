@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.('https://hub.docker.com/', 'dockerHub') {
+    docker('https://hub.docker.com/', 'Dockerhubcreds') {
 
         def customImage = docker.build("mastanvali123/dockerwebapp")
 
